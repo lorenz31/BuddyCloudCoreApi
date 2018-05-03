@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.1.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BuddyCloudCoreApi2">
+      <HintPath>..\BuddyCloudCoreApi2\bin\Debug\netcoreapp2.0\BuddyCloudCoreApi2.dll</HintPath>
+    </Reference>
+    <Reference Include="BuddyCloudCoreApi2.Core">
+      <HintPath>..\BuddyCloudCoreApi2.Core\bin\Debug\netcoreapp2.0\BuddyCloudCoreApi2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BuddyCloudCoreApi2.DAL">
+      <HintPath>..\BuddyCloudCoreApi2.DAL\bin\Debug\netcoreapp2.0\BuddyCloudCoreApi2.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="BuddyCloudCoreApi2.Helper">
+      <HintPath>..\BuddyCloudCoreApi2.Helper\bin\Debug\netcoreapp2.0\BuddyCloudCoreApi2.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="BuddyCloudCoreApi2.JwtToken">
+      <HintPath>..\BuddyCloudCoreApi2.JwtToken\bin\Debug\netcoreapp2.0\BuddyCloudCoreApi2.JwtToken.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
