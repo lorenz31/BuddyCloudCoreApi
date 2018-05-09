@@ -16,5 +16,6 @@ namespace BuddyCloudCoreApi2.Services.Interfaces
         Task<List<Stock>> GetAvailableStocksPerSellerAsync(Guid sellerid);
         int GetTotalQtySold(Guid sellerid, Guid stockid);
         decimal GetTotalStockSales(Guid sellerid, Guid stockid);
+        Task<bool> SetStockSalePriceAsync(Guid sellerid, Guid stockid, int price, int percent);
     }
 }

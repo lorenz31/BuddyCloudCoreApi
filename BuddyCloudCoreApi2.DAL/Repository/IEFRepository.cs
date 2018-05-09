@@ -27,6 +27,7 @@ namespace BuddyCloudCoreApi2.DAL.Repository
         Task<List<Stock>> GetStocksPerSellerAsync(Guid id);
         Task<bool> ReplenishItemCountAsync(Guid sellerid, Guid stockid, int qty);
         Task<List<Stock>> GetAvailableStocksPerSellerAsync(Guid sellerid);
+        Task<bool> SetStockSalePriceAsync(Guid sellerid, Guid stockid, double saleprice);
         #endregion
 
         #region Orders & Transactions Methods
@@ -132,6 +133,17 @@ namespace BuddyCloudCoreApi2.DAL.Repository
                 return stocks;
             else
                 return null;
+        }
+
+        public async Task<bool> SetStockSalePriceAsync(Guid sellerid, Guid stockid, double saleprice)
+        {
+            var stockInfo = _dbContext.Stocks.Where(u => u.UserId == sellerid && u.StockId == stockid).SingleOrDefault();
+            stockInfo.SalePrice = (decimal)saleprice;
+
+            _dbContext.Entry(stockInfo).State = EntityState.Modified;
+            int result = await _dbContext.SaveChangesAsync();
+
+            return result == 1 ? true : false;
         }
         #endregion
 

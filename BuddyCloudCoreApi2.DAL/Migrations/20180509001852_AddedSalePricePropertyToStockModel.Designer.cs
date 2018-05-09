@@ -11,9 +11,10 @@ using System;
 namespace BuddyCloudCoreApi2.DAL.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20180509001852_AddedSalePricePropertyToStockModel")]
+    partial class AddedSalePricePropertyToStockModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

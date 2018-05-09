@@ -1,6 +1,7 @@
 ﻿using BuddyCloudCoreApi2.Core.Models;
 using BuddyCloudCoreApi2.Services.Interfaces;
 using BuddyCloudCoreApi2.DAL.Repository;
+using BuddyCloudCoreApi2.Helper;
 
 using System.Threading.Tasks;
 using System;
@@ -134,6 +135,13 @@ namespace BuddyCloudCoreApi2.Services.Service
             decimal totalStockSales = _repo.GetTotalStockSales(sellerid, stockid);
 
             return totalStockSales == 0 ? 0 : totalStockSales;
+        }
+
+        public async Task<bool> SetStockSalePriceAsync(Guid sellerid, Guid stockid, int price, int percent)
+        {
+            var salePrice = SalePriceHelper.ComputeSalePrice(percent, price);
+
+            return await _repo.SetStockSalePriceAsync(sellerid, stockid, salePrice);
         }
     }
 }

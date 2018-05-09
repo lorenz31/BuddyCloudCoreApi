@@ -118,6 +118,21 @@ namespace BuddyCloudCoreApi2.Controllers
             return Ok(totalQtySold);
         }
 
+        [HttpPut]
+        [Route("stock/{stockid:guid}/price/{price:int}/percent/{percent:int}")]
+        public async Task<IActionResult> PutStockSalePrice(string sellerid, Guid stockid, int price, int percent)
+        {
+            var sellerId = GuidParserHelper.StringToGuidParser(sellerid);
+            var stockId = Guid.Parse(stockid.ToString());
+
+            var isSet = await _inventorySvc.SetStockSalePriceAsync(sellerId, stockId, price, percent);
+
+            if (isSet)
+                return Ok(new ResponseModel { Status = true, Message = "Sale price for stock id " + stockId + "set." });
+            else
+                return BadRequest(new ResponseModel { Status = false, Message = "" });
+        }
+
         //[HttpPut]
         //[Route("replenish/{stockid:guid}/{qty:int}")]
         //public async Task<IActionResult> PutStockQty(Guid sellerid, Guid stockid, int qty)

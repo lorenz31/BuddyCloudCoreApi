@@ -35,6 +35,8 @@ namespace BuddyCloudCoreApi2.Core.Models
         [Required]
         public decimal SellingPrice { get; set; }
 
+        public decimal SalePrice { get; set; }
+
         [ForeignKey("UserId")]
         public virtual ApplicationUser User { get; set; }
 
