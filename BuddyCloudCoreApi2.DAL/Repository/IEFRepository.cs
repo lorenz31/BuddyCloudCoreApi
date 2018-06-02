@@ -44,6 +44,10 @@ namespace BuddyCloudCoreApi2.DAL.Repository
         int GetTotalQtySold(Guid sellerid, Guid stockid);
         decimal GetTotalStockSales(Guid sellerid, Guid stockid);
         #endregion
+
+        #region Statistics Method
+        Task<List<StatisticsDTO>> GetSalesStatisticsAsync(Guid stockid, int month, int year);
+        #endregion
     }
 
     public class GenericRepository<T> : IEFRepository<T> where T : class
@@ -250,6 +254,24 @@ namespace BuddyCloudCoreApi2.DAL.Repository
                                                 .Sum();
 
             return totalStockSales;
+        }
+        #endregion
+
+        #region Statistics Methods
+        public async Task<List<StatisticsDTO>> GetSalesStatisticsAsync(Guid stockid, int month, int year)
+        {
+            var statistics = await (from trans in _dbContext.Transactions
+                                    join orders in _dbContext.Orders on trans.Id equals orders.TransactionId
+                                    where trans.TransactionDate.Month == month && trans.TransactionDate.Year == year && orders.StockId == stockid
+                                    orderby trans.TransactionDate
+                                    select new StatisticsDTO
+                                    {
+                                        StockName = orders.ItemName,
+                                        Qty = orders.Qty,
+                                        TotalSales = orders.Total
+                                    }).ToListAsync();
+
+            return statistics;
         }
         #endregion
     }
