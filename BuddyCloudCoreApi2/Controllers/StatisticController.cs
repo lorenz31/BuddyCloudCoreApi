@@ -27,11 +27,12 @@ namespace BuddyCloudCoreApi2.Controllers
 
         [HttpGet]
         [Route("")]
-        public async Task<IActionResult> GetStatistics([FromQuery] string stockid, [FromQuery] int month, [FromQuery] int year)
+        public async Task<IActionResult> GetStatistics(string sellerid, [FromQuery] string stockid, [FromQuery] int month, [FromQuery] int year)
         {
             var stockId = GuidParserHelper.StringToGuidParser(stockid);
+            var sellerId = GuidParserHelper.StringToGuidParser(sellerid);
 
-            var statistic = await _statisticSvc.GetSalesStatisticsAsync(stockId, month, year);
+            var statistic = await _statisticSvc.GetSalesStatisticsAsync(sellerId, stockId, month, year);
 
             return Ok(statistic != null ? statistic : null);
         }

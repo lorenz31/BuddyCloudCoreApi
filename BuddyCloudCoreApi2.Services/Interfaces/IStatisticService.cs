@@ -8,6 +8,6 @@ namespace BuddyCloudCoreApi2.Services.Interfaces
 {
     public interface IStatisticService
     {
-        Task<StatisticsDTO> GetSalesStatisticsAsync(Guid stockid, int month, int year);
+        Task<StatisticsDTO> GetSalesStatisticsAsync(Guid sellerid, Guid stockid, int month, int year);
     }
 }

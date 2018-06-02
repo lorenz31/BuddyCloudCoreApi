@@ -46,7 +46,7 @@ namespace BuddyCloudCoreApi2.DAL.Repository
         #endregion
 
         #region Statistics Method
-        Task<List<StatisticsDTO>> GetSalesStatisticsAsync(Guid stockid, int month, int year);
+        Task<List<StatisticsDTO>> GetSalesStatisticsAsync(Guid sellerid, Guid stockid, int month, int year);
         #endregion
     }
 
@@ -258,11 +258,11 @@ namespace BuddyCloudCoreApi2.DAL.Repository
         #endregion
 
         #region Statistics Methods
-        public async Task<List<StatisticsDTO>> GetSalesStatisticsAsync(Guid stockid, int month, int year)
+        public async Task<List<StatisticsDTO>> GetSalesStatisticsAsync(Guid sellerid, Guid stockid, int month, int year)
         {
             var statistics = await (from trans in _dbContext.Transactions
                                     join orders in _dbContext.Orders on trans.Id equals orders.TransactionId
-                                    where trans.TransactionDate.Month == month && trans.TransactionDate.Year == year && orders.StockId == stockid
+                                    where trans.UserId == sellerid && trans.TransactionDate.Month == month && trans.TransactionDate.Year == year && orders.StockId == stockid
                                     orderby trans.TransactionDate
                                     select new StatisticsDTO
                                     {

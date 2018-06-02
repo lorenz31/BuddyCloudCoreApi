@@ -32,10 +32,11 @@ namespace BuddyCloudCoreApi2.UnitTest
         public async Task Statistics_GetSalesStatisticsAsync_Test()
         {
             Guid stockId = Guid.Parse("9A069B39-0A3F-4FCD-97CD-942CFB1C02B5");
+            Guid sellerId = Guid.Parse("2802ADD9-E682-40A9-C665-08D5C364BE70");
             int month = 6;
             int year = 2018;
 
-            var sales = await _repo.GetSalesStatisticsAsync(stockId, month, year);
+            var sales = await _repo.GetSalesStatisticsAsync(sellerId, stockId, month, year);
 
             Assert.AreNotEqual(0, sales.Count);
         }

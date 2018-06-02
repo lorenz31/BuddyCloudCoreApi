@@ -18,7 +18,7 @@ namespace BuddyCloudCoreApi2.Services.Service
             _repo = repo;
         }
 
-        public async Task<StatisticsDTO> GetSalesStatisticsAsync(Guid stockid, int month, int year)
+        public async Task<StatisticsDTO> GetSalesStatisticsAsync(Guid sellerid, Guid stockid, int month, int year)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace BuddyCloudCoreApi2.Services.Service
 
                 var stockId = Guid.Parse(stockid.ToString());
 
-                var statistics = await _repo.GetSalesStatisticsAsync(stockid, month, year);
+                var statistics = await _repo.GetSalesStatisticsAsync(sellerid, stockid, month, year);
 
                 if (statistics.Count == 0)
                 {
