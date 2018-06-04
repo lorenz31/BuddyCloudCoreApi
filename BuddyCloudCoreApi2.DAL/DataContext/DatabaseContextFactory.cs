@@ -11,7 +11,7 @@ namespace BuddyCloudCoreApi2.DAL.DataContext
         public DatabaseContext CreateDbContext(string[] args)
         {
             var builder = new DbContextOptionsBuilder<DatabaseContext>();
-            builder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=BuddyCloudCoreApiDB;Integrated Security=true;Trusted_Connection=True;MultipleActiveResultSets=True");
+            builder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=BuddyCloudCoreApiDevDB;Integrated Security=true;Trusted_Connection=True;MultipleActiveResultSets=True");
 
             return new DatabaseContext(builder.Options);
         }
