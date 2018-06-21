@@ -1,8 +1,8 @@
-﻿using BuddyCloudCoreApi2.JwtToken.Security;
-using BuddyCloudCoreApi2.DAL.DataContext;
-using BuddyCloudCoreApi2.DAL.Repository;
-using BuddyCloudCoreApi2.Services.Service;
-using BuddyCloudCoreApi2.Services.Interfaces;
+﻿using BuddyCloudCoreApi21.JwtToken;
+using BuddyCloudCoreApi21.DAL.DataContext;
+using BuddyCloudCoreApi21.DAL.Repository;
+using BuddyCloudCoreApi21.Services.Service;
+using BuddyCloudCoreApi21.Services.Interfaces;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,9 +12,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Threading.Tasks;
-using System;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Cors.Internal;
 
 namespace BuddyCloudCoreApi2
 {
