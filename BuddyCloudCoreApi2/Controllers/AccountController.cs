@@ -1,5 +1,6 @@
 ﻿using BuddyCloudCoreApi2.Core.Identity;
 using BuddyCloudCoreApi2.Core.Models;
+using BuddyCloudCoreApi2.Core.Response;
 using BuddyCloudCoreApi2.Services.Interfaces;
 
 using System;
@@ -16,7 +17,8 @@ namespace BuddyCloudCoreApi2.Controllers
     [Authorize]
     [Produces("application/json")]
     [Route("api/v1/Account")]
-    public class AccountController : Controller
+    [ApiController]
+    public class AccountController : ControllerBase
     {
         private IAccountService _acctSvc;
 
@@ -40,10 +42,10 @@ namespace BuddyCloudCoreApi2.Controllers
 
             if (!result)
             {
-                return BadRequest("Error registering new user.");
+                return BadRequest(new ResponseModel { Status = false, Message = "Error registering new user." });
             }
 
-            return Ok();
+            return Ok(new ResponseModel { Status = true, Message = "Successfully registered user." });
         }
     }
 }

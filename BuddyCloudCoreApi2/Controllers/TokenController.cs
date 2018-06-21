@@ -17,7 +17,8 @@ namespace BuddyCloudCoreApi2.Controllers
     [EnableCors("AllowSpecificOrigin")]
     [Produces("application/json")]
     [Route("api/v1/Token")]
-    public class TokenController : Controller
+    [ApiController]
+    public class TokenController : ControllerBase
     {
         private IConfiguration _config;
         private IAccountService _acctSvc;

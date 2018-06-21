@@ -16,7 +16,8 @@ namespace BuddyCloudCoreApi2.Controllers
     [EnableCors("AllowSpecificOrigin")]
     [Produces("application/json")]
     [Route("api/v1/Statistic/{sellerid}")]
-    public class StatisticController : Controller
+    [ApiController]
+    public class StatisticController : ControllerBase
     {
         private IStatisticService _statisticSvc;
 

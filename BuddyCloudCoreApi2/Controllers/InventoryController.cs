@@ -17,7 +17,8 @@ namespace BuddyCloudCoreApi2.Controllers
     [EnableCors("AllowSpecificOrigin")]
     [Produces("application/json")]
     [Route("api/v1/Inventory/{sellerid}")]
-    public class InventoryController : Controller
+    [ApiController]
+    public class InventoryController : ControllerBase
     {
         private IInventoryService _inventorySvc;
 

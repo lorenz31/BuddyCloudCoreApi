@@ -19,7 +19,8 @@ namespace BuddyCloudCoreApi2.Controllers
     [EnableCors("AllowSpecificOrigin")]
     [Produces("application/json")]
     [Route("api/v1/Transaction/{sellerid}")]
-    public class TransactionController : Controller
+    [ApiController]
+    public class TransactionController : ControllerBase
     {
         private ITransactionService _transactionSvc;
 
