@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuddyCloudCoreApi21.BusinessModels\BuddyCloudCoreApi21.BusinessModels.csproj" />
+    <ProjectReference Include="..\BuddyCloudCoreApi21.Core\BuddyCloudCoreApi21.Core.csproj" />
+    <ProjectReference Include="..\BuddyCloudCoreApi21.DAL\BuddyCloudCoreApi21.DAL.csproj" />
+    <ProjectReference Include="..\BuddyCloudCoreApi21.Helper\BuddyCloudCoreApi21.Helper.csproj" />
+  </ItemGroup>
+
+</Project>

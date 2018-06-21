@@ -1,0 +1,9 @@
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\bin\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.deps.json
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\bin\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.dll
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\bin\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.pdb
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.csprojAssemblyReference.cache
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.csproj.CoreCompileInputs.cache
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.AssemblyInfoInputs.cache
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.AssemblyInfo.cs
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.dll
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.JwtToken\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.JwtToken.pdb

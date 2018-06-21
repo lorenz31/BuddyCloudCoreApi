@@ -1,0 +1,19 @@
+﻿using BuddyCloudCoreApi21.Core.Models;
+using BuddyCloudCoreApi21.DAL.DTO;
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuddyCloudCoreApi21.Services.Interfaces
+{
+    public interface ITransactionService
+    {
+        Task<bool> AddTransactionAsync(Transactions obj);
+        Task<List<Transactions>> GetTransactionHistoryAsync(Guid sellerid);
+        Task<List<Transactions>> GetPendingTransactionsAsync(Guid sellerid);
+        Task<Transactions> GetTransactionDetailsAsync(int transactionid);
+        bool UpdateOrderStatus(Guid sellerId, int transactionId);
+    }
+}

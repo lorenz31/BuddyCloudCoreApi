@@ -1,0 +1,9 @@
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\bin\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.deps.json
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\bin\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.dll
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\bin\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.pdb
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.csprojAssemblyReference.cache
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.csproj.CoreCompileInputs.cache
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.AssemblyInfoInputs.cache
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.AssemblyInfo.cs
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.dll
+D:\Repository\BuddyCloudCoreApi\BuddyCloudCoreApi21.Helper\obj\Debug\netstandard2.0\BuddyCloudCoreApi21.Helper.pdb
