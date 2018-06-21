@@ -6,26 +6,22 @@
 
 BuddyCloudCoreApi2/bin/*
 BuddyCloudCoreApi2/obj/*
-BuddyCloudCoreApi2/Properties
 BuddyCloudCoreApi2/BuddyCloudCoreApi2.csproj.user
 BuddyCloudCoreApi2/ScaffoldingReadMe.txt
-
-BuddyCloudCoreApi2.JwtToken/bin/*
-BuddyCloudCoreApi2.JwtToken/obj/*
-
-BuddyCloudCoreApi2.Core/bin/*
-BuddyCloudCoreApi2.Core/obj/*
-
-BuddyCloudCoreApi2.Services/bin/*
-BuddyCloudCoreApi2.Services/obj/*
 
 .vs/*
 
 BuddyCloudCoreApi2.UnitTest/bin/*
 BuddyCloudCoreApi2.UnitTest/obj/*
 
-BuddyCloudCoreApi2.Helper/bin/*
-BuddyCloudCoreApi2.Helper/obj/*
+BuddyCloudCoreApi21.Core/bin/*
+BuddyCloudCoreApi21.Core/obj/*
 
-BuddyCloudCoreApi2.DAL/bin/*
-BuddyCloudCoreApi2.DAL/obj/*
+BuddyCloudCoreApi21.BusinessModels/bin/*
+BuddyCloudCoreApi21.BusinessModels/obj/*
+
+BuddyCloudCoreApi21.DAL/bin/*
+BuddyCloudCoreApi21.DAL/obj/*
+
+BuddyCloudCoreApi21.Services/bin/*
+BuddyCloudCoreApi21.Services/obj/*
