@@ -1,7 +1,7 @@
-﻿using BuddyCloudCoreApi2.Core.Models;
-using BuddyCloudCoreApi2.Core.Response;
-using BuddyCloudCoreApi2.Services.Interfaces;
-using BuddyCloudCoreApi2.Helper;
+﻿using BuddyCloudCoreApi21.Core.Models;
+using BuddyCloudCoreApi21.Core.Response;
+using BuddyCloudCoreApi21.Services.Interfaces;
+using BuddyCloudCoreApi21.Helper;
 
 using System;
 using System.Net;

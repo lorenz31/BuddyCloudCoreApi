@@ -1,6 +1,6 @@
-﻿using BuddyCloudCoreApi2.Core.Models;
-using BuddyCloudCoreApi2.JwtToken.Security;
-using BuddyCloudCoreApi2.Services.Interfaces;
+﻿using BuddyCloudCoreApi21.Core.Models;
+using BuddyCloudCoreApi21.JwtToken;
+using BuddyCloudCoreApi21.Services.Interfaces;
 
 using Newtonsoft.Json;
 using System.Threading.Tasks;
